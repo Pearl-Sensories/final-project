@@ -82,15 +82,6 @@ function Signup() {
           />
         </div>
 
-        <label className="block mb-2 text-sm font-medium text-gray-700">
-          Select your option (required)*
-        </label>
-        <select className="block w-full p-2 border border-gray-300 rounded-lg
-         bg-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-          <option value="">Choose...</option>
-          <option value="option1">Teacher</option>
-          <option value="option2">Student</option>
-        </select>
 
         <label className="block mb-2 text-sm font-medium text-gray-700">
           Institution/Organization Name (optional)
@@ -110,18 +101,7 @@ function Signup() {
 
         {/* Show this only when name is filled */}
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Profile Picture (optional)
-          </label>
-          <input
-            type="file"
-            accept="image/*"
-            placeholder=""
-            className="w-full mt-1 p-2 border border-gray-300 rounded-lg
-             focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
+      
 
         
         <label className="block mb-2 text-sm font-medium text-gray-700">
@@ -140,36 +120,11 @@ function Signup() {
           />
         </div>
 
-
-        <label className="block mb-2 text-sm font-medium text-gray-700">
-          Location (required)*
-        </label>
-
-        <div className="relative mb-4">
-          <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-          <MdLocationPin />
-          </span>
-          <input
-            type="text"
-            placeholder="city, state "
-            className="pl-10 pr-4 py-2 w-full border border-gray-300
-             rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-             required
-          />
-        </div>
+        
 
 
         
-        <label className="block mb-2 text-sm font-medium text-gray-700">
-          Interests / topics of interest (optional)
-        </label>
-
-          <select className="block w-full p-2 border border-gray-300 rounded-lg
-         bg-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-          <option value="">Choose...</option>
-          <option value="option1"></option>
-          <option value="option2"></option>
-        </select>
+     
 
 
         <label className="inline-flex items-center space-x-2 mt-10">
