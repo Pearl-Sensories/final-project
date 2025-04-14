@@ -82,51 +82,6 @@ function Signup() {
           />
         </div>
 
-
-        <label className="block mb-2 text-sm font-medium text-gray-700">
-          Institution/Organization Name (optional)
-        </label>
-
-        <div className="relative mb-4">
-          <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-            <MdOutlineCastForEducation />
-          </span>
-          <input
-            type="text"
-            placeholder=""
-            className="pl-10 pr-4 py-2 w-full border border-gray-300
-             rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-        </div>
-
-        {/* Show this only when name is filled */}
-
-      
-
-        
-        <label className="block mb-2 text-sm font-medium text-gray-700">
-          Phone Number (optional)
-        </label>
-
-        <div className="relative mb-4">
-          <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-          <MdPhoneForwarded />
-          </span>
-          <input
-            type="number"
-            placeholder="+233 "
-            className="pl-10 pr-4 py-2 w-full border border-gray-300
-             rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-        </div>
-
-        
-
-
-        
-     
-
-
         <label className="inline-flex items-center space-x-2 mt-10">
   <input 
     type="checkbox" 

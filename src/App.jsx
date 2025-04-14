@@ -14,6 +14,12 @@ import Details from './pages/Details'
 import ProfessionalDetails from './pages/ProfessionalDetails'
 import Logout from './pages/Logout'
 import ContactUs from './pages/ContactUs'
+import ProfileStudent from './pages/ProfileStudent'
+import Lessons from './pages/Lessons'
+import UnsubmittedForm from './pages/UnsubmittedForm'
+import SubmittedForm from './pages/SubmittedForm'
+import BottomNavbar from './pages/BottomNavbar'
+import StudentHome from './pages/StudentHome'
 
 function App() {
   
@@ -27,6 +33,8 @@ function App() {
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/createaccount/<signup/>' element={<Signup/>}></Route>
       <Route path='/createaccount/<signup/>/<terms/>' element={<Termscondi/>}></Route>
+
+
       <Route path='/profile' element={<Profile/>}></Route>
       <Route path='/selectcards' element={<SelectCards/>}></Route>
       <Route path='/delete' element={<Delete/>}></Route>
@@ -35,6 +43,17 @@ function App() {
       <Route path='/professional-details' element={<ProfessionalDetails/>}></Route>
       <Route path='/logout' element={<Logout/>}></Route>
       <Route path='/contactus' element={<ContactUs/>}></Route>
+
+
+      <Route path='/studnet-profile' element={<ProfileStudent/>}></Route>
+      <Route path='/lessons' element={<Lessons/>}></Route>
+
+
+      <Route path='/lessons/unsubmitted' element={<UnsubmittedForm/>}></Route>
+      <Route path='/lessons/submitted' element={<SubmittedForm/>}></Route>
+      <Route path='/navbar' element={<BottomNavbar/>}></Route>
+      <Route path='/home-student' element={<StudentHome/>}></Route>
+
 
 
     </Routes>
