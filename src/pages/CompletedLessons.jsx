@@ -8,8 +8,9 @@ import { GrFormSchedule } from "react-icons/gr";
 import { GrSchedule } from "react-icons/gr";
 import { HiComputerDesktop } from "react-icons/hi2";
 import BottomNavbar from './BottomNavbar';
+import NavbarTutor from './NavbarTutor';
 
-function UnsubmittedForm() {
+function CompletedLessons() {
   return (
     <div>
          <section className='text-3xl flex justify-between border-b border-gray-300'>
@@ -20,11 +21,11 @@ function UnsubmittedForm() {
         
                 <div className='flex justify-between text-2xl mt-0 bg-[#FF9899] text-white
                  '>
-                    <Link to="/lessons" className=' hover:bg-orange-400 cursor-pointer'><IoMdTime className='ml-10' />Upcoming</Link>
-                    <button className='hover:bg-orange-400 cursor-pointer'><GrFormSchedule 
-                    className='ml-10 ' />Completed</button>
-                    <Link to="/lessons/submitted" className='hover:bg-orange-400 cursor-pointer'><AiTwotoneSchedule
-                     className='ml-10 '/>Uncompleted</Link>
+                    <Link to="/lessons-tutor" className=' hover:bg-orange-400 cursor-pointer'><IoMdTime className='ml-10' />Upcoming</Link>
+                    <button className='hover:bg-orange-400 cursor-pointer'><AiTwotoneSchedule
+                     className='ml-10 '/>Completed</button>
+                      <Link to="/uncompleted-lessons" className='hover:bg-orange-400 cursor-pointer'><GrFormSchedule 
+                    className='ml-10 ' />Uncompleted</Link>
                 </div>
         
                 <h1 className='flex text-2xl text-gray-700 bg-[#F5F5F5]'>TODAY</h1>
@@ -34,9 +35,9 @@ function UnsubmittedForm() {
                 <h1><HiComputerDesktop />Online Lesson</h1>
                 </div>
 
-                <BottomNavbar/>
+                <NavbarTutor/>
     </div>
   )
 }
 
-export default UnsubmittedForm
+export default CompletedLessons;

@@ -8,9 +8,10 @@ import { GrSchedule } from "react-icons/gr";
 import { HiComputerDesktop } from "react-icons/hi2";
 import { Link } from 'react-router';
 import BottomNavbar from './BottomNavbar';
+import NavbarTutor from './NavbarTutor';
 
 
-function Lessons() {
+function LessonsTutors() {
   return (
     <div>
         <section className='text-3xl flex justify-between border-b border-gray-300'>
@@ -22,9 +23,9 @@ function Lessons() {
         <div className='flex justify-between text-2xl mt-0 bg-[#FF9899] text-white
          '>
             <button className=' hover:bg-orange-400 cursor-pointer'><IoMdTime className='ml-10' />Upcoming</button>
-            <Link to="/lessons/unsubmitted" className='hover:bg-orange-400 cursor-pointer'><GrFormSchedule 
+            <Link to="/completed-lessons" className='hover:bg-orange-400 cursor-pointer'><GrFormSchedule 
             className='ml-10 ' />Completed</Link>
-            <Link to="/lessons/submitted" className='hover:bg-orange-400 cursor-pointer'><AiTwotoneSchedule
+            <Link to="/uncompleted-lessons" className='hover:bg-orange-400 cursor-pointer'><AiTwotoneSchedule
              className='ml-10 '/>Uncompleted</Link>
         </div>
 
@@ -36,10 +37,10 @@ function Lessons() {
         </div>
 
          <span className=''>
-        <BottomNavbar/>
+        <NavbarTutor/>
         </span>
     </div>
   )
 }
 
-export default Lessons
+export default LessonsTutors;

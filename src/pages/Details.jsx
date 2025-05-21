@@ -2,7 +2,7 @@ import React from 'react'
 
 function Details() {
   return (
-    <div>
+   <div>
         <div class="mb-4">
   <label for="about" class="block text-xl font-medium text-gray-700 mb-1">
     About You (will be displayed on your profile)
@@ -41,7 +41,7 @@ function Details() {
 
   <button className='bg-[#FF9899] p-3 w-25 ml-20'>Save</button>
 
-    </div>
+    </div> 
   )
 }
 

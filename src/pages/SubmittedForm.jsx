@@ -7,6 +7,7 @@ import { AiTwotoneSchedule } from "react-icons/ai";
 import { GrFormSchedule } from "react-icons/gr";
 import { GrSchedule } from "react-icons/gr";
 import { HiComputerDesktop } from "react-icons/hi2";
+import BottomNavbar from './BottomNavbar';
 
 function SubmittedForm() {
   return (
@@ -21,9 +22,9 @@ function SubmittedForm() {
                  '>
                     <Link to="/lessons" className=' hover:bg-orange-400 cursor-pointer'><IoMdTime className='ml-10' />Upcoming</Link>
                     <Link to="/lessons/unsubmitted" className='hover:bg-orange-400 cursor-pointer'><GrFormSchedule 
-                    className='ml-10 ' />Unsubmitted</Link>
+                    className='ml-10 ' />Completed</Link>
                     <button className='hover:bg-orange-400 cursor-pointer'><AiTwotoneSchedule
-                     className='ml-10 '/>Submitted</button>
+                     className='ml-10 '/>Uncompleted</button>
                 </div>
         
                 <h1 className='flex text-2xl text-gray-700 bg-[#F5F5F5]'>TODAY</h1>

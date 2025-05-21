@@ -2,12 +2,12 @@ import React from 'react'
 import { IoIosCloseCircle } from "react-icons/io";
 import { Link } from 'react-router';
 
-function ContactUs() {
+function ContactUsStudent() {
   return (
 
     <div className='text-3xl'>
 
-     <Link to="/profile">
+     <Link to="/student-dashboard">
      <IoIosCloseCircle />
      </Link>
 
@@ -16,4 +16,4 @@ function ContactUs() {
   )
 }
 
-export default ContactUs
+export default ContactUsStudent;

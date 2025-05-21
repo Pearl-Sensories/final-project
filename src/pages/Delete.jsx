@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 function Delete() {
   return (
@@ -11,9 +12,12 @@ function Delete() {
         <p className='text-xl'>All of your cards will be immediately deleted <br />Any cards you have created that have been <br /> shared with others will also be deleted. </p>
 
         <span className='flex justify-center gap-5 mb-5'>
+        <Link to="/student-dashboard">
             <button className='bg-[#cfc8c8] w-25 p-3 rounded-xl cursor-pointer'>Go back</button>
+            </Link>
             <button className='bg-red-600 text-white w-50 p-3 rounded-xl cursor-pointer'>
                 Start Deletion</button>
+             
         </span>
 
         </div>
